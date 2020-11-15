@@ -1,6 +1,7 @@
 body{
     background-color: #0068b3;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 header{
@@ -21,6 +22,7 @@ header h1{
     font-family: 'minhaFont';
     display: flex;
     align-items: center;
+    text-shadow: 7px 5px 6px rgb(0, 0, 0, 0.3);
 }
 
 main{
@@ -31,27 +33,103 @@ main{
     justify-content: center;
 }
 
+main p{
+    text-align: justify;
+}
+
 footer{
     background-color: #0068b3;
     color: #ffffff;
     text-align: center;    
 }
 
-div
-{
-    margin-bottom: 20px;
+.destaques{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.teste
-{
+.outros{
     display: flex;
     flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+    padding: 0px;
+}
+
+.div-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary{
+    border: 2px groove white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secundary{
+    display: flex;
+    flex-direction: column;
+}
+
+.secundary h3, .secundary p
+{
+    text-align: left;
 }
 
 .ajuste{
     height: auto !important;
 }
 
+.btn-custom{
+    display: flex !important;
+    justify-content: left !important;
+    align-items: center !important;
+    margin: 0px !important;
+}
+
+.outros .div-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outros .primary{
+    border: 2px groove white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outros .secundary{
+    display: flex;
+    flex-direction: column;
+}
+
+.outros .secundary h3
+{
+    text-align: left;
+}
+
+.outros .btn-custom{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Config para pc */
 @media only screen and (min-width: 800px) {
     header{
         width: 100vw;
@@ -80,9 +158,58 @@ div
 
     .img-body{
         width: 20vw;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+
+    .primary img{
+        width: 5vw;
+    }
+
+    .primary{
+        width: 7vw;
+        height: 7vw;
+        margin-right: 2vw;
+    }
+
+    .btn-custom{
+        width: 80vw;
+        height: 19vh;
+        margin-bottom: 2vh !important;
+    }
+
+    .destaques{
+        width: 90vw;
+        height: 40vh;
+        margin-bottom: 5vh;
+    }
+
+    .outros .primary img{
+        width: 5vw;
+    }
+
+    .outros .primary{
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .outros .btn-custom{
+        width: 13vw;
+        height: 30vh;
+        margin-right: 2vw !important;
+    }
+
+    .outros{
+        width: 90vw;
+        height: 35vh;
+    }
+
+    .outros .secundary h3{
+        font-size: 1.2vw;
     }
 }
 
+/* Config para celular */
 @media only screen and (max-width: 800px) {
     header{
         width: 100vw;
@@ -96,7 +223,7 @@ div
     header h1{
         width: 50vw;
         margin-left: 5vw;
-        font-size: 6vw;
+        font-size: 7vw;
         height: 12vh;
     }
 
@@ -111,7 +238,70 @@ div
     }
 
     .img-body{
-        width: 10vw;
+        width: 50vw;
+        margin-bottom: 5vh;
+    }
+
+    main h2{
+        font-size: 6vw;
+    }
+
+    .primary img{
+        width: 20vw;
+    }
+
+    .primary{
+        width: 30vw;
+        height: 30vw;
+        margin-right: 2vw;
+    }
+
+    .btn-custom{
+        width: 80vw;
+        height: 19vh;
+        margin-bottom: 2vh !important;
+    }
+
+    .secundary h3{
+        font-size: 5vw;
+    }
+
+    .secundary p{
+        font-size: 4vw;
+    }
+
+    .destaques{
+        margin-bottom: 5vh;
+        height: 50vh;
+        width: 90vw;
+    }
+
+    .outros .primary img{
+        width: 15vw;
+    }
+
+    .outros .primary{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .outros .secundary{
+        width: 37vw;
+    }
+
+    .outros .btn-custom{
+        width: 40vw;
+        height: 23vh;
+        margin-right: 2vw !important;
+    }
+
+    .outros .secundary h3{
+        font-size: 4vw;
+    }
+
+    .outros{
+        width: 100vw;
+        height: 32vh;
     }
 }
     
