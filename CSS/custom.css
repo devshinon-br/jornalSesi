@@ -121,6 +121,12 @@ footer{
     align-items: center !important;
 }
 
+.multi-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 /* Config para pc */
 @media only screen and (min-width: 800px) {
     header{
@@ -296,6 +302,11 @@ footer{
     .outros{
         width: 100vw;
         height: 32vh;
+    }
+
+    main iframe{
+        width: 683px; 
+        height: 384px; 
     }
 }
     
