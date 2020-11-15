@@ -43,14 +43,6 @@ footer{
     text-align: center;    
 }
 
-.destaques{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
 .outros{
     display: flex;
     flex-direction: row;
@@ -169,19 +161,12 @@ footer{
     .primary{
         width: 7vw;
         height: 7vw;
-        margin-right: 2vw;
     }
 
     .btn-custom{
         width: 80vw;
         height: 19vh;
         margin-bottom: 2vh !important;
-    }
-
-    .destaques{
-        width: 90vw;
-        height: 40vh;
-        margin-bottom: 5vh;
     }
 
     .outros .primary img{
@@ -205,7 +190,12 @@ footer{
     }
 
     .outros .secundary h3{
-        font-size: 1.2vw;
+        font-size: 1vw;
+    }
+
+    main iframe{
+        width: 683px; 
+        height: 384px; 
     }
 }
 
@@ -246,6 +236,10 @@ footer{
         font-size: 6vw;
     }
 
+    main h3{
+        font-size: 5vw;
+    }
+
     .primary img{
         width: 20vw;
     }
@@ -253,7 +247,6 @@ footer{
     .primary{
         width: 30vw;
         height: 30vw;
-        margin-right: 2vw;
     }
 
     .btn-custom{
@@ -262,18 +255,18 @@ footer{
         margin-bottom: 2vh !important;
     }
 
+    .secundary{
+        width: 46vw;
+        overflow: hidden;
+        height: 30vw;
+    }
+
     .secundary h3{
         font-size: 5vw;
     }
 
     .secundary p{
         font-size: 4vw;
-    }
-
-    .destaques{
-        margin-bottom: 5vh;
-        height: 50vh;
-        width: 90vw;
     }
 
     .outros .primary img{
@@ -286,7 +279,8 @@ footer{
     }
 
     .outros .secundary{
-        width: 37vw;
+        width: 37vw !important;
+        height: auto !important;
     }
 
     .outros .btn-custom{
