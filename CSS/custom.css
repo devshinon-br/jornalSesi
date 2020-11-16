@@ -203,6 +203,10 @@ footer{
         width: 683px; 
         height: 384px; 
     }
+    
+    .aumentar-img{
+        width: 60vw;
+    }
 }
 
 /* Config para celular */
@@ -307,6 +311,23 @@ footer{
     main iframe{
         width: 683px; 
         height: 384px; 
+    }
+
+    .aumentar-img{
+        width: 85vw;
+    }
+
+    .diminuir-img{
+        width: 60vw;
+    }
+
+    .espacar-imagens{
+        width: 60vw;
+    }
+
+    .break-cell{
+        justify-content: center !important;
+        flex-direction: column !important;
     }
 }
     
