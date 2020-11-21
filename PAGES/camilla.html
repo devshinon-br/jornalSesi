@@ -6,7 +6,10 @@
         <title>Jornal SESI</title>
         <link rel="shortcut icon" href="../IMG/icone.png">
         <link rel="stylesheet" href="../CSS/bootstrap.css">
+        <link rel="stylesheet" href="../CSS/materialize.css">
         <link rel="stylesheet" href="../CSS/custom.css">
+        <script src="../JS/jquery.js"></script>
+        <script src="../JS/materialize.js"></script>
         <script src="../JS/script.js"></script>
     </head>
     <body>
@@ -16,7 +19,7 @@
         <main class="ajuste">
             <div class="container text-center" >
                 <h2>O nordeste Brasileiro mostrado em uma obra literária</h2>
-                <img src = "../IMG/camillaSertoes.jpg" class = "img-body img-responsive">
+                <img onclick="$('.materialboxed').materialbox('methodName').open()" src = "../IMG/camillaSertoes.jpg" class = "img-body img-responsive materialboxed">
                 <p>
                     Na obra´´ Os sertões´´ do escritor Euclides da Cunha, apresenta o passado do povo nordestino, durante a Guerra de Canudos. 
                 </p>
